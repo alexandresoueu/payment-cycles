@@ -1,12 +1,11 @@
 {
-  "name": "backend",
+  "name": "payment-cycle",
   "version": "1.0.0",
   "description": "",
   "main": "src/loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start src/loader.js --name payment-cycle",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "production": "pm2 start src/loader.js --name payment-cycle"
   },
   "keywords": [],
   "author": "",
