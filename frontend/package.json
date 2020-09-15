@@ -1,12 +1,14 @@
 {
-  "name": "frontend",
+  "name": "payment-cycles-frontend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --progress --colors --inline --hot",
+    "production": "webpack --progress -p"
   },
-  "author": "",
+  "author": "Alexandre Oliveira",
   "license": "ISC",
   "devDependencies": {
     "admin-lte": "2.3.6",
