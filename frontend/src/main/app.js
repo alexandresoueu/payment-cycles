@@ -1,7 +1,11 @@
+
 import React from 'react'
 
-export default props => {
-  <div className='wrapper'>
-    <h1>App</h1>
-  </div>
-}
+
+const App = props => (
+    <div className='wrapper'>
+      <h1>NEMOOOOO E DORI</h1>
+    </div>
+) 
+
+export default App
