@@ -1,10 +1,11 @@
-
+import '../common/templates/dependencies'
 import React from 'react'
+import Header from '../common/templates/header'
 
 
 const App = props => (
     <div className='wrapper'>
-      <h1>NEMOOOOO E DORI</h1>
+      <Header />
     </div>
 ) 
 
