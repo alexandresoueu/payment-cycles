@@ -7,7 +7,9 @@ class Dashboard extends Component {
     return (
       <div>
         <ContentHeader title='Titulão' subTitle='titulinho' />
-        <Content>Dashboard</Content>
+        <Content>
+          Dashboard
+        </Content>
       </div>
     )
   }
