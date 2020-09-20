@@ -6,7 +6,7 @@ import BillingCycle from '../BillingCycle/BillingCycle'
 
 const Routes = props => {
   return (
-    <Router history={hashHistory} >
+    <Router history={hashHistory}>
       <Route path='/' component={Dashboard} />
       <Route path='/billingCycles' component={BillingCycle} />
       <Redirect from='*' to='/' />
