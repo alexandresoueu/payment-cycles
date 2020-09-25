@@ -14,6 +14,7 @@ const debtSchema = new mongoose.Schema({
       String,
     required: false,
     uppercase: true,
+    trim: true,
     enum: [
       'PAGO',
       'PENDENTE',
