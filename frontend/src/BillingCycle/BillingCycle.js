@@ -12,7 +12,7 @@ import TabContent from '../common/tab/TabContent'
 import { selectTab, showTabs } from '../common/tab/tabActions'
 
 class BillingCycle extends Component {
-  componentWillMount() {
+  componentWillMount () {
     this.props.selectTab('tabList')
     this.props.showTabs('tabList', 'tabCreate')
   }
@@ -24,10 +24,10 @@ class BillingCycle extends Component {
         <Content>
           <Tabs>
             <TabsHeader>
-              <TabHeader label='List' icon='bars' target='tabList'/>
-              <TabHeader label='Add' icon='plus' target='tabCreate'/>
-              <TabHeader label='Change' icon='pencil' target='tabUpdate'/>
-              <TabHeader label='Remove' icon='trash-o' target='tabDelete'/>
+              <TabHeader label='List' icon='bars' target='tabList' />
+              <TabHeader label='Add' icon='plus' target='tabCreate' />
+              <TabHeader label='Change' icon='pencil' target='tabUpdate' />
+              <TabHeader label='Remove' icon='trash-o' target='tabDelete' />
             </TabsHeader>
             <TabsContent>
               <TabContent id='tabList'><h1>List</h1></TabContent>
