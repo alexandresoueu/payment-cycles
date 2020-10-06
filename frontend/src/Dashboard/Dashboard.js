@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 import Row from '../common/layout/Row'
-import Content from '../common/templates/content'
-import ContentHeader from '../common/templates/contentHeader'
+import Content from '../common/templates/Content'
+import ContentHeader from '../common/templates/ContentHeader'
 import ValueBox from '../common/widget/ValueBox'
 import getSummary from '../Dashboard/DashboardActions'
 
