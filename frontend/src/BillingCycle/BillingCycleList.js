@@ -5,11 +5,24 @@ import { getList } from './BillingCyclesActions'
 
 class BillingCycleList extends Component {
 
-  componentWillMount () {
+  componentWillMount() {
     this.props.getList()
   }
-  
-  render () {
+
+  renderRows() {
+    const list = this.props.list || []
+    console.log(list)
+
+    return list.map(item => (
+      <tr key={item._id}>
+        <td>{item.name}</td>
+        <td>{item.month}</td>
+        <td>{item.year}</td>
+      </tr>
+    ))
+  }
+
+  render() {
     console.log('MAKKINHO ::: ', this.props.list)
     return (
       <div>
@@ -22,7 +35,7 @@ class BillingCycleList extends Component {
             </tr>
           </thead>
           <tbody>
-            BODYNHO
+            {this.renderRows()}
           </tbody>
         </table>
       </div>
