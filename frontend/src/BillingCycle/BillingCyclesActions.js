@@ -10,4 +10,4 @@ const getList = () => {
 }
 
 
-export getList
+export { getList }
