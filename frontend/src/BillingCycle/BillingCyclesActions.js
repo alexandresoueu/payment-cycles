@@ -31,4 +31,11 @@ const create = values => {
   }
 }
 
-export { getList, create }
+const showUpdate = billingCycle => {
+  return [
+    showTabs('tabUpdate'),
+    selectTab('tabUpdate'),
+  ]
+}
+
+export { getList, create, showUpdate }
