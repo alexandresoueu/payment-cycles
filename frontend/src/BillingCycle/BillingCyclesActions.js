@@ -15,8 +15,17 @@ const getList = () => {
 }
 
 const create = values => {
-  return  dispatch => {
-    axios.post(`${BASE_URL}/billingCycles`, values)
+  return submit( values, 'post' )
+}
+
+const update = values => {
+  return submit( values, 'put' )
+}
+
+const submit = ( values, method ) => { 
+  return dispatch => {
+    const id = values._id ? values._id : ''
+    axios[method](`${BASE_URL}/billingCycles/${id}`, values)
       .then(resp => {
         toastr.success('SUCESSO', 'Operação realizada com Sucesso...')
         dispatch(init())
@@ -44,4 +53,4 @@ const init = () => {
   ]
 }
 
-export { getList, create, showUpdate, init }
+export { getList, create, update, showUpdate, init }
