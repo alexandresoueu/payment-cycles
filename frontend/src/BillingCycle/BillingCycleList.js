@@ -21,8 +21,6 @@ class BillingCycleList extends Component {
           <button className='btn btn-warning' onClick={() => this.props.showUpdate(item)}>
             <i className='fa fa-pencil'></i>
           </button>
-        </td>
-        <td>
           <button className='btn btn-danger' onClick={() => this.props.showDelete(item)}>
             <i className='fa fa-trash-o'></i>
           </button>
@@ -40,7 +38,7 @@ class BillingCycleList extends Component {
               <th>Name</th>
               <th>Month</th>
               <th>Year</th>
-              <th>Actions</th>
+              <th className='table-actions'>Actions</th>
             </tr>
           </thead>
           <tbody>
