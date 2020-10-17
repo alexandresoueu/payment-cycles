@@ -21,9 +21,27 @@ class Dashboard extends Component {
         <ContentHeader title='Titulão' subTitle='titulinho' />
         <Content>
           <Row>
-            <ValueBox cols='12 4' color='green' icon='bank' value={`R$ ${credit}`} text='Amount Credit' />
-            <ValueBox cols='12 4' color='red' icon='credit-card' value={`R$ ${debt}`} text='Amount Debit' />
-            <ValueBox cols='12 4' color='blue' icon='money' value={`R$ ${credit - debt}`} text='Cash' />
+            <ValueBox
+              cols='12 4'
+              color='green'
+              icon='bank'
+              value={`R$ ${credit}`}
+              text='Amount Credit'
+            />
+            <ValueBox
+              cols='12 4'
+              color='red'
+              icon='credit-card'
+              value={`R$ ${debt}`}
+              text='Amount Debit'
+            />
+            <ValueBox
+              cols='12 4'
+              color='blue'
+              icon='money'
+              value={`R$ ${credit - debt}`}
+              text='Cash'
+            />
           </Row>
         </Content>
       </div>
