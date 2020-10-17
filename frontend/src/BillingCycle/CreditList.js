@@ -7,11 +7,12 @@ import Grid from '../common/layout/Grid'
 class CreditList extends Component {
 
   renderRows() {
-    return (
-      <tr>
+    const list = this.props.list || []
+    return list.map((item, index) => (
+      <tr key={index}>
         <td>
           <Field
-            name='credits[0].name'
+            name={`credits[${index}].name`}
             component={Input}
             placeholder='Put the name'
             readOnly={this.props.readOnly}
@@ -19,7 +20,7 @@ class CreditList extends Component {
         </td>
         <td>
           <Field
-            name='credits[0].value'
+            name={`credits[${index}].value`}
             component={Input}
             placeholder='Put the value'
             readOnly={this.props.readOnly}
@@ -27,7 +28,7 @@ class CreditList extends Component {
         </td>
         <td></td>
       </tr>
-    )
+    ))
   }
 
   render() {
