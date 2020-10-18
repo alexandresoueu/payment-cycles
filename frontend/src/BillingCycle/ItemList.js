@@ -5,6 +5,7 @@ import { Field, arrayInsert, arrayRemove } from 'redux-form'
 import Input from '../common/form/Input'
 
 import Grid from '../common/layout/Grid'
+import If from '../common/operator/If'
 
 class ItemList extends Component {
 
@@ -39,6 +40,16 @@ class ItemList extends Component {
             placeholder='Put the value'
             readOnly={this.props.readOnly}
           />
+        </td>
+        <td>
+          <If test={this.props.showStatus}>
+            <Field
+              name={`${this.props.field}[${index}].status`}
+              component={Input}
+              placeholder='Put the status'
+              readOnly={this.props.readOnly}
+            />
+          </If>
         </td>
         <td>
           <button
@@ -77,6 +88,9 @@ class ItemList extends Component {
               <tr>
                 <th>Name</th>
                 <th>Value</th>
+                <If test={this.props.showStatus}>
+                  <th>Status</th>
+                </If>
                 <th className='table-actions'>Actions</th>
               </tr>
             </thead>
