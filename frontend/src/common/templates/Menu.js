@@ -5,10 +5,10 @@ import MenuTree from './MenuTree'
 const Menu = props => {
   return (
     <ul className='sidebar-menu'>
-      <MenuItem path='#' label='Dashboard' icon='dashboard' />
+      <MenuItem path='/' label='Dashboard' icon='dashboard' />
       <MenuTree label='form' icon='edit'>
         <MenuItem
-          path='#billingCycles'
+          path='billingCycles'
           label='Payment Cycles'
           icon='usd'
         />

@@ -3,7 +3,6 @@ import React from 'react'
 import Header from '../common/templates/header'
 import SideBar from '../common/templates/SideBar'
 import Footer from '../common/templates/Footer'
-import Routes from './Routes'
 import Messages from '../common/msg/Messages'
 
 const App = props => (
@@ -11,7 +10,7 @@ const App = props => (
     <Header />
     <SideBar />
     <div className='content-wrapper'>
-      <Routes />
+      {props.children}
     </div>
     <Footer />
     <Messages />
