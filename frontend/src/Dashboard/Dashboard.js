@@ -18,7 +18,7 @@ class Dashboard extends Component {
 
     return (
       <div>
-        <ContentHeader title='Titulão' subTitle='titulinho' />
+        <ContentHeader title='Dashboard' subTitle='first version' />
         <Content>
           <Row>
             <ValueBox

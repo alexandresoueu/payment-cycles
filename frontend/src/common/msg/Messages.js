@@ -1,7 +1,7 @@
 import React from 'react'
 import ReduxToastr from 'react-redux-toastr'
 
-import 'modules/react-redux-toastr/lib/ReduxToastr.js'
+import 'react-redux-toastr/lib/ReduxToastr.js'
 
 const Messages = props => {
   return (
