@@ -1,5 +1,5 @@
 import React from 'react'
-import If from '../operator/if'
+import If from '../operator/If'
 
 const InputAuth = props => (
   <If test={!props.hide}>
